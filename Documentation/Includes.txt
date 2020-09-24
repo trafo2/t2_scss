@@ -1,0 +1,29 @@
+.. ---------
+.. textroles
+.. ---------
+
+.. role:: html(code)
+.. role:: php(code)
+.. role:: typoscript(code)
+
+.. role:: ts(typoscript)
+   :class: typoscript
+
+.. role:: yaml(code)
+
+.. default-role:: code
+
+.. ---------
+.. highlight
+.. ---------
+
+.. highlight:: typoscript
+
+.. ------
+.. images
+.. ------
+
+.. |include-typoscript-template|      image:: ../Images/include-typoscript-template.png
+.. :align: left
+.. :border: 0
+.. :name: Include in TypoScript template

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the scss extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="emptyInputFolder">There are no scss or sass files in given folder: %s</label>
+			<label index="missingFolders">No input or output folder has been configured.</label>
+		</languageKey>
+	</data>
+</T3locallang>

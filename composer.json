@@ -1,0 +1,34 @@
+{
+  "name": "trafo2/t2_scss",
+  "description": "SCSS compiler for TYPO3.",
+  "type": "typo3-cms-extension",
+  "version": "1.0.0",
+  "homepage": "https://www.trafo2.de",
+  "authors": [
+    {
+      "name": "Trafo2 GmbH",
+      "email": "info@trafo2.de",
+      "homepage": "https://www.trafo2.de",
+      "role": "Developer"
+    }
+  ],
+  "license": "GPL-3.0-or-later",
+  "support": {
+    "source": "https://github.com/trafo2/t2_scss",
+    "issues": "https://github.com/trafo2/t2_scss/issues",
+    "docs": "https://docs.typo3.org/p/trafo2/t2_scss/master/en-us/"
+  },
+  "autoload": {
+    "psr-4": {
+      "Trafo2\\T2Scss\\": "Classes/"
+    }
+  },
+  "require": {
+    "php": ">=7.1,<7.5",
+    "typo3/cms-core": ">=7.6,<10.5",
+    "scssphp/scssphp": "1.2.1"
+  },
+  "keywords": [
+    "typo3", "scss", "css"
+  ]
+}

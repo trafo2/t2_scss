@@ -1,0 +1,14 @@
+# OS or IDE folders
+.DS_Store
+._*
+.idea/
+.sass-cache/
+.settings/
+.project/
+atlassian-ide-plugin.xml
+Thumbs.db
+
+# File-Extensions to ignore
+*.diff
+*.log
+*.bak

@@ -1,0 +1,26 @@
+plugin.tx_t2scss {
+	files {
+		# cat=plugin.tx_t2scss/file/1; type=string; label=SCSS files are stored in this folder (You can use EXT instead of typo3conf/ext/)
+		inputFolder =
+
+		# cat=plugin.tx_t2scss/file/2; type=string; label=CSS-Files should be stored in this path (You can use EXT instead of typo3conf/ext/)
+		outputFolder =
+
+		# cat=plugin.tx_t2scss//3; type=string; label=File extensions that will be included in compiling process
+		extensions = scss,sass
+	}
+
+	settings {
+		# cat=plugin.tx_t2scss//1; type=boolean; label =PHP-Compiler -- Activate compiler (it is recommended to deactivate it, if you don't have uncompiled SCSS styles to save server power)
+		activateCompiler = 1
+
+		# cat=plugin.tx_t2scss//3; type=boolean; label =PHP-Compiler -- Delete generated CSS files with no corresponding source file (recommended)
+		unlinkCssFilesWithNoSourceFile = 1
+
+		# cat=plugin.tx_t2scss//4; type=boolean; label =Compression -- CSS file will be compressed if you check this (recommended)
+		compressed = 1
+
+		# cat=plugin.tx_t2scss//5; type=boolean; label =Force mode -- ALWAYS generate new file (not recommended for production)
+		forceMode = 0
+	}
+}

@@ -1,0 +1,20 @@
+plugin.tx_t2scss {
+	files {
+		inputFolder = {$plugin.tx_t2scss.files.inputFolder}
+		outputFolder = {$plugin.tx_t2scss.files.outputFolder}
+		extensions = {$plugin.tx_t2scss.files.extensions}
+	}
+	settings {
+		activateCompiler = {$plugin.tx_t2scss.settings.activateCompiler}
+		unlinkCssFilesWithNoSourceFile = {$plugin.tx_t2scss.settings.unlinkCssFilesWithNoSourceFile}
+		compressed = {$plugin.tx_t2scss.settings.compressed}
+		forceMode = {$plugin.tx_t2scss.settings.forceMode}
+		include.default {
+			media = all
+			title =
+			compress = 1
+			allWrap =
+			excludeFromConcatenation = 0
+		}
+	}
+}
