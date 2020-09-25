@@ -13,6 +13,11 @@ class PhpCompilerController extends BaseController
 			GeneralUtility::mkdir_deep($basePath . DIRECTORY_SEPARATOR . $this->outputFolder);
 		}
 
+		if (!defined('TYPO3_COMPOSER_MODE') || !TYPO3_COMPOSER_MODE) {
+			$extensionPath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('t2_scss');
+			require_once $extensionPath . '/Resources/Private/PHP/vendor/autoload.php';
+		}
+
 		$compiler = new ScssPhp\Compiler();
 		$compiler->addImportPath($this->inputFolder);
 		if ($this->configuration['settings']['compressed']) {
