@@ -32,7 +32,7 @@ class PhpCompilerController extends BaseController
 
 			$outputFile = $this->outputFolder . substr($filename, 0, -5) . '_' . $md5 . '.css';
 
-			if ($this->configuration['settings']['forceMode']) {
+			if ($this->configuration['settings']['forceMode'] && file_exists($outputFile)) {
 				unlink($outputFile);
 			}
 
