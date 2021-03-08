@@ -28,6 +28,11 @@
     "typo3/cms-core": ">=7.6,<10.5",
     "scssphp/scssphp": "1.2.1"
   },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "t2_scss"
+    }
+  },
   "keywords": [
     "typo3", "scss", "css"
   ]
