@@ -2,7 +2,7 @@
   "name": "trafo2/t2_scss",
   "description": "SCSS compiler for TYPO3.",
   "type": "typo3-cms-extension",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "homepage": "https://www.trafo2.de",
   "authors": [
     {
@@ -26,7 +26,7 @@
   "require": {
     "php": ">=7.1",
     "typo3/cms-core": ">=7.6",
-    "scssphp/scssphp": "1.2.1"
+    "scssphp/scssphp": "1.8.1"
   },
   "extra": {
     "typo3/cms": {
