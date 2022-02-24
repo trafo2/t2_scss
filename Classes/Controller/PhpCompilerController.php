@@ -54,7 +54,7 @@ class PhpCompilerController extends BaseController
 
 		foreach ($files as $cssFile) {
 			$cssFileWithoutExt = substr($cssFile, 0, -37);
-			$fileOptions = $this->configuration['settings']['include'][$cssFileWithoutExt];
+			$fileOptions = $this->configuration['settings']['include'][$cssFileWithoutExt] ?? [];
 			$defaultOptions = $this->configuration['settings']['include']['default'];
 			$excludeFromPageRender = $fileOptions['exclude'] ?? false;
 			if (!$excludeFromPageRender) {
